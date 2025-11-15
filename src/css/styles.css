@@ -16,3 +16,129 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+
+.list {
+  margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.list-link {
+  font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color .25s ease-in-out, color .25s ease-in-out;
+  margin: 15px auto;
+} 
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 24px auto;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  max-width: 1128px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+  /* transition: transform 250ms ease-in-out; */
+}
+
+.form-feedback {
+  max-width: 408px;
+    padding: 24px;
+}
+
+.form-label {
+  display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label span {
+     letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.form-label:nth-child(1) {
+  margin-bottom: 8px;
+}
+
+.form-input {
+  outline: none;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 8px 16px;
+    line-height: 1.5;
+    letter-spacing: .04em;
+    color: #2e2f42;
+    transition: border-color .25s ease-in-out;
+}
+
+.form-input:hover {
+  border-color: #000;
+}
+
+.textarea {
+  resize: none;
+}
+
+.form-btn
+{
+  margin-top: 16px;
+    border: none;
+    cursor: pointer;
+    width: 95px;
+    height: 40px;
+    background-color: #4e75ff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: #6c8cff;
+}
